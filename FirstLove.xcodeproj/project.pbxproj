@@ -21,6 +21,7 @@
 		57102BC51C477CE600A4FD53 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 57102BBD1C477CE600A4FD53 /* AFURLRequestSerialization.m */; };
 		57102BC61C477CE600A4FD53 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 57102BBF1C477CE600A4FD53 /* AFURLResponseSerialization.m */; };
 		57102BC71C477CE600A4FD53 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57102BC11C477CE600A4FD53 /* AFURLSessionManager.m */; };
+		57F635F41C61FC89006FF3EE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F635F31C61FC89006FF3EE /* libz.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		57102BBF1C477CE600A4FD53 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		57102BC01C477CE600A4FD53 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		57102BC11C477CE600A4FD53 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		57F635F31C61FC89006FF3EE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57F635F41C61FC89006FF3EE /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +88,7 @@
 		57102B801C4775B400A4FD53 = {
 			isa = PBXGroup;
 			children = (
+				57F635F31C61FC89006FF3EE /* libz.tbd */,
 				57102B8B1C4775B500A4FD53 /* FirstLove */,
 				57102BA51C4775B700A4FD53 /* FirstLoveUITests */,
 				57102B8A1C4775B500A4FD53 /* Products */,

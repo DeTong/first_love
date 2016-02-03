@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "AFNetworking.h"
 
+#import "zlib.h"
+
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *myTextView;
 @property (copy, nonatomic) NSString *urlString;
@@ -51,6 +53,12 @@
 //    [request setValue:@"application/json" forHTTPHeaderField:@"Content-Type"];
     //  删除请求头(其实就是把值设置为空)
 //    [request setValue:@"" forHTTPHeaderField:@"Content-Type"];
+    //  压缩请求内容
+//    [request addValue:@"gzip" forHTTPHeaderField:@"Content-Encoding"];
+//    NSData *compressed = [self compressNSData:data];
+//    [request setHTTPBody:compressed];
+    //  对请求开启管道支持
+//    [request setHTTPShouldUsePipelining:YES];
 
     
     //  默认不应使用mainqueue
@@ -138,6 +146,75 @@
      */
     [[NSHTTPCookieStorage sharedHTTPCookieStorage] setCookie:cookie];
     [[NSUserDefaults standardUserDefaults] synchronize];
+}
+
+//  创建NSOperationQueue
+- (void)createNSOperationQueue
+{
+    NSInvocationOperation *invocationOperation = [[NSInvocationOperation alloc] initWithTarget:self selector:@selector(createCookie) object:nil];
+    
+    NSBlockOperation *blockOperation = [NSBlockOperation blockOperationWithBlock:^{
+        NSLog(@"NSBlockOperation");
+    }];
+    
+    NSOperationQueue *queue = [[NSOperationQueue alloc] init];
+    [queue addOperation:invocationOperation];
+    [queue addOperation:blockOperation];
+}
+
+/**
+ *  压缩请求体
+ *
+ *  @param myData 被压缩数据
+ *
+ *  @return 压缩之后的数据
+ */
+- (NSData *)compressNSData:(NSData *)myData
+{
+    NSMutableData *compressedData = [NSMutableData dataWithLength:16384];
+    
+    z_stream compressiongStream;
+    //  设置compressiongStream
+    compressiongStream.next_in = (Bytef *)[myData bytes];   //  被压缩源字符串
+//    compressiongStream.next_out   //  设置后字符串的存放缓冲区
+    compressiongStream.avail_in = (int)[myData length];     //  被压源字符串的长度
+    compressiongStream.zalloc = Z_NULL;
+    compressiongStream.zfree = Z_NULL;
+    compressiongStream.opaque = Z_NULL;
+    compressiongStream.total_out = 0;                       //  压缩后字符串的最大长度
+    
+    //  start the compression of the stream using default compression   开始使用默认压缩流压缩
+    if (deflateInit2(&compressiongStream, Z_DEFAULT_COMPRESSION, Z_DEFLATED, (15 + 16), 8, Z_DEFAULT_STRATEGY) != Z_OK) {
+        //  压缩出错
+//        errorOccurred = YES;
+        return nil;
+    }
+    //  循环写输出流
+    do {
+        //  for every 16k of data compress a chunk into
+        //  the compressedData buffer
+        if (compressiongStream.total_out >= [compressedData length]) {
+            // increase the size of the output data buffer  增加输出数据缓冲区的大小
+            [compressedData increaseLengthBy:16386];
+        }
+        
+        compressiongStream.next_out = [compressedData mutableBytes] + compressiongStream.total_out;
+        compressiongStream.avail_out = (int)([compressedData length] + compressiongStream.total_out);
+        
+        //  compress the next chunk of data
+        deflate(&compressiongStream, Z_FINISH);
+        //  keep going until no more compressed data to copy out    保持继续，直到没有更多的压缩数据复制
+    } while (compressiongStream.avail_out == 0);
+    
+    //  end the compression run
+    deflateEnd(&compressiongStream);
+    
+    //  set the actual length of the compressed data object     设置压缩数据对象的实际长度
+    //  to match the number of bytes    匹配字节数
+    //  returned by the compression stream      返回压缩流
+    [compressedData setLength:compressiongStream.total_out];
+    
+    return compressedData;
 }
 
 
