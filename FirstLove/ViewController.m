@@ -54,11 +54,49 @@
     //  删除请求头(其实就是把值设置为空)
 //    [request setValue:@"" forHTTPHeaderField:@"Content-Type"];
     //  压缩请求内容
-//    [request addValue:@"gzip" forHTTPHeaderField:@"Content-Encoding"];
-//    NSData *compressed = [self compressNSData:data];
-//    [request setHTTPBody:compressed];
+    [request addValue:@"gzip" forHTTPHeaderField:@"Content-Encoding"];
+    NSData *compressed = [self compressNSData:data];
+    [request setHTTPBody:compressed];
     //  对请求开启管道支持
 //    [request setHTTPShouldUsePipelining:YES];
+    //  request的缓存处理
+    [request setCachePolicy:NSURLRequestUseProtocolCachePolicy];
+    //  配置NSURLCache    1MB的内存缓存 24MB的持久化缓存 缓存数据库的位置位于应用的沙盒，在Library/Caches 目录下，文件名为URLCache
+//    NSURLCache *cache = [[NSURLCache alloc] initWithMemoryCapacity:1024 * 1024 diskCapacity:1024 * 1024 * 24 diskPath:@"URLCache"];
+//    [NSURLCache setSharedURLCache:cache];
+
+    
+    /**
+     *  系统提供的几种缓存策略
+     */
+//    typedef NS_ENUM(NSUInteger, NSURLRequestCachePolicy) {
+//        /**
+//         *  默认策略
+//         */
+//        NSURLRequestUseProtocolCachePolicy = 0,
+//        /**
+//         *  请求略过本地缓存，从网络上检索新的内容。如果某些网络设备介于应用于数据源之间，并且持有内容的缓存副本，就会返回缓存副本。
+//         */
+//        NSURLRequestReloadIgnoringLocalCacheData = 1,
+//        /**
+//         *  请求略过本地缓存并将头添加到请求中，同时中间设备也略过缓存，提供原服务器上的最新数据。
+//         */
+//        NSURLRequestReloadIgnoringLocalAndRemoteCacheData = 4,
+//        // Unimplemented NSURLRequestReloadIgnoringCacheData = NSURLRequestReloadIgnoringLocalCacheData,
+//        /**
+//         *  返回一份内容的缓存副本而不去验证服务器上是否有最新的副本。如果请求的缓存副本在缓存中存在，就将其返回。如果缓存副本不存在，那就通过网络请求检索内容。
+//         *  该设置提供了最快的响应时间，但却最有可能返回过期的数据。要想通过该设置带来收益，请使用该类型的请求想用户提供最初的快速响应，然后在后台线程中发出请求，使用服务器的最新数据来刷新缓存。
+//         */
+//        NSURLRequestReturnCacheDataElseLoad = 2,
+//        /**
+//         *  只返回缓存中的内容，如果内容不在缓存中，那就会返回错误而不是从服务器上获取内容。
+//         */
+//        NSURLRequestReturnCacheDataDontLoad = 3,
+//        /**
+//         *  总是会重新验证数据。在某些情况下，缓存的响应可能会有过期时间，到了这个时间后系统就会检查最新的数据。如果使用该设置，那就会忽略掉过期的时间，并且总是验证服务器有没有最新的内容。
+//         */
+//        NSURLRequestReloadRevalidatingCacheData = 5,        // Unimplemented    未实现的。
+//    };
 
     
     //  默认不应使用mainqueue
@@ -217,6 +255,13 @@
     return compressedData;
 }
 
+- (void)socket
+{
+    //初始化socket
+//    socket(<#int#>, <#int#>, <#int#>)
+//    bind(<#int#>, <#const struct sockaddr *#>, <#socklen_t#>)
+    
+}
 
 - (IBAction)clickAFNetButton:(id)sender {
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];

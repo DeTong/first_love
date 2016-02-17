@@ -21,6 +21,9 @@
 		57102BC51C477CE600A4FD53 /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 57102BBD1C477CE600A4FD53 /* AFURLRequestSerialization.m */; };
 		57102BC61C477CE600A4FD53 /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 57102BBF1C477CE600A4FD53 /* AFURLResponseSerialization.m */; };
 		57102BC71C477CE600A4FD53 /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 57102BC11C477CE600A4FD53 /* AFURLSessionManager.m */; };
+		571370651C730A9500781D84 /* LocalNotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 571370641C730A9500781D84 /* LocalNotificationViewController.m */; };
+		57C76FEA1C745B35003715B4 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C76FE91C745B35003715B4 /* MapViewController.m */; };
+		57C76FEC1C745ECC003715B4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C76FEB1C745ECC003715B4 /* CoreLocation.framework */; };
 		57F635F41C61FC89006FF3EE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F635F31C61FC89006FF3EE /* libz.tbd */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +66,11 @@
 		57102BBF1C477CE600A4FD53 /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
 		57102BC01C477CE600A4FD53 /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
 		57102BC11C477CE600A4FD53 /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		571370631C730A9500781D84 /* LocalNotificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalNotificationViewController.h; sourceTree = "<group>"; };
+		571370641C730A9500781D84 /* LocalNotificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalNotificationViewController.m; sourceTree = "<group>"; };
+		57C76FE81C745B35003715B4 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		57C76FE91C745B35003715B4 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		57C76FEB1C745ECC003715B4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		57F635F31C61FC89006FF3EE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -72,6 +80,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57F635F41C61FC89006FF3EE /* libz.tbd in Frameworks */,
+				57C76FEC1C745ECC003715B4 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				57F635F31C61FC89006FF3EE /* libz.tbd */,
+				57C76FEB1C745ECC003715B4 /* CoreLocation.framework */,
 				57102B8B1C4775B500A4FD53 /* FirstLove */,
 				57102BA51C4775B700A4FD53 /* FirstLoveUITests */,
 				57102B8A1C4775B500A4FD53 /* Products */,
@@ -114,6 +124,10 @@
 				57102B931C4775B700A4FD53 /* ViewController.m */,
 				57102BB11C4775EE00A4FD53 /* MainViewController.h */,
 				57102BB21C4775EE00A4FD53 /* MainViewController.m */,
+				571370631C730A9500781D84 /* LocalNotificationViewController.h */,
+				571370641C730A9500781D84 /* LocalNotificationViewController.m */,
+				57C76FE81C745B35003715B4 /* MapViewController.h */,
+				57C76FE91C745B35003715B4 /* MapViewController.m */,
 				57102B951C4775B700A4FD53 /* Main.storyboard */,
 				57102B981C4775B700A4FD53 /* Assets.xcassets */,
 				57102B9A1C4775B700A4FD53 /* LaunchScreen.storyboard */,
@@ -263,9 +277,11 @@
 				57102BC41C477CE600A4FD53 /* AFSecurityPolicy.m in Sources */,
 				57102BC61C477CE600A4FD53 /* AFURLResponseSerialization.m in Sources */,
 				57102B941C4775B700A4FD53 /* ViewController.m in Sources */,
+				57C76FEA1C745B35003715B4 /* MapViewController.m in Sources */,
 				57102B911C4775B600A4FD53 /* AppDelegate.m in Sources */,
 				57102BC21C477CE600A4FD53 /* AFHTTPSessionManager.m in Sources */,
 				57102BC71C477CE600A4FD53 /* AFURLSessionManager.m in Sources */,
+				571370651C730A9500781D84 /* LocalNotificationViewController.m in Sources */,
 				57102B8E1C4775B600A4FD53 /* main.m in Sources */,
 				57102BC31C477CE600A4FD53 /* AFNetworkReachabilityManager.m in Sources */,
 				57102BB31C4775EE00A4FD53 /* MainViewController.m in Sources */,

@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "LocalNotificationViewController.h"
+#import "MapViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,12 +20,25 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-//    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    self.window.backgroundColor = [UIColor whiteColor];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.backgroundColor = [UIColor whiteColor];
 //    self.window.rootViewController = [MainViewController new];
-//    [self.window makeKeyAndVisible];
+    self.window.rootViewController = [MapViewController new];
+//    self.window.rootViewController = [LocalNotificationViewController new];
+    [self.window makeKeyAndVisible];
 
     return YES;
+}
+
+- (void)application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    NSLog(@"notification %@",notification);
+    NSInteger badgeNumber = [UIApplication sharedApplication].applicationIconBadgeNumber;
+    badgeNumber--;
+    [UIApplication sharedApplication].applicationIconBadgeNumber = badgeNumber;
+    
+    
+//    [[UIApplication sharedApplication] cancelAllLocalNotifications];  //  取消所有通知
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
