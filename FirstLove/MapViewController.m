@@ -15,9 +15,30 @@
     CLLocationManager *locationManager;
 }
 
+@property (nonatomic , copy) NSString *abc;
+@property (nonatomic , strong) CLGeocoder *geocoder;
+
 @end
 
 @implementation MapViewController
+
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        self.abc = @"abc";
+    }
+    return self;
+}
+
+- (CLGeocoder *)geocoder
+{
+     if (_geocoder==nil) {
+         _geocoder=[[CLGeocoder alloc]init];
+     }
+     return _geocoder;
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -44,7 +65,47 @@
     
     [locationManager startUpdatingLocation];
 
+//    if ([self.abc isEqualToString:@"abc"])
+//        NSLog(@"1");
+//    else
+//        NSLog(@"3");
+//    
+//    NSLog(@"2");
     
+    
+    //      系统自带的地理编码 与 反地理编码
+    /**
+     *  地名转换成经纬度
+     */
+//    [self.geocoder geocodeAddressString:@"大福海鲜烧烤" completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+//        if (error) {
+//            NSLog(@"error - %@",error);
+//        }
+//        NSLog(@"%ld",placemarks.count);
+//        CLPlacemark *firstPlacemark=[placemarks firstObject];
+//        NSLog(@"%@",firstPlacemark.name);
+//        NSLog(@"纬度：%f 经度： %f",firstPlacemark.location.coordinate.latitude,firstPlacemark.location.coordinate.longitude);
+//    }];
+    
+    /**
+     *  经纬度转换成地名
+     */
+    //  首先制作一个经纬度
+//    CLLocationCoordinate2D *location = CLLocationCoordinate2DMake(41.674263, 123.350014);
+    CLLocationDegrees latitude = 39.977338;
+    CLLocationDegrees longitude = 116.329855;
+    
+    CLLocation *location = [[CLLocation alloc] initWithLatitude:latitude longitude:longitude];
+    
+    [self.geocoder reverseGeocodeLocation:location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+        if (error) {
+            NSLog(@"%@",error);
+        }
+        NSLog(@"%lu",placemarks.count);
+        CLPlacemark *reversePlacemark = placemarks.firstObject;
+        
+        NSLog(@"%@",reversePlacemark.name);
+    }];
 }
 
 #pragma mark - CLLocationManagerDelegate

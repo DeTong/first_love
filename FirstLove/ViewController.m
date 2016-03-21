@@ -11,7 +11,7 @@
 
 #import "zlib.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITextViewDelegate>
 @property (weak, nonatomic) IBOutlet UITextView *myTextView;
 @property (copy, nonatomic) NSString *urlString;
 
@@ -33,6 +33,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self createCookie];
+    self.myTextView.delegate = self;
 }
 - (IBAction)clickSystemButton:(id)sender {
     NSMutableDictionary *dic = [NSMutableDictionary dictionary];
@@ -276,6 +277,17 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"失败 %@",error);
     }];
+}
+
+#pragma mark - UITextViewDelegate
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
+{
+    NSLog(@"%@",[[textView textInputView] primaryLanguage]);
+    //不支持系统表情的输入
+    if ([[[UITextInputMode currentInputMode] primaryLanguage] isEqualToString:@"emoji"]) {
+        return NO;
+    }
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning {
