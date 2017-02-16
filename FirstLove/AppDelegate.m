@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "LocalNotificationViewController.h"
 #import "MapViewController.h"
+#import "WordSortingViewController.h"
 
 @interface AppDelegate ()
 
@@ -23,7 +24,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
 //    self.window.rootViewController = [MainViewController new];
-    self.window.rootViewController = [MapViewController new];
+//    self.window.rootViewController = [MapViewController new];
+    self.window.rootViewController = [WordSortingViewController new];
 //    self.window.rootViewController = [LocalNotificationViewController new];
     [self.window makeKeyAndVisible];
 

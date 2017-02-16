@@ -282,7 +282,7 @@
 #pragma mark - UITextViewDelegate
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text
 {
-    NSLog(@"%@",[[textView textInputView] primaryLanguage]);
+//    NSLog(@"%@",[[textView textInputView] primaryLanguage]);
     //不支持系统表情的输入
     if ([[[UITextInputMode currentInputMode] primaryLanguage] isEqualToString:@"emoji"]) {
         return NO;

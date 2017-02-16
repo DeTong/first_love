@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		148581021E553C770055F4FD /* WordSortingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148581011E553C770055F4FD /* WordSortingViewController.m */; };
 		57102B8E1C4775B600A4FD53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57102B8D1C4775B600A4FD53 /* main.m */; };
 		57102B911C4775B600A4FD53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57102B901C4775B600A4FD53 /* AppDelegate.m */; };
 		57102B941C4775B700A4FD53 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57102B931C4775B700A4FD53 /* ViewController.m */; };
@@ -39,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		148581001E553C770055F4FD /* WordSortingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordSortingViewController.h; sourceTree = "<group>"; };
+		148581011E553C770055F4FD /* WordSortingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordSortingViewController.m; sourceTree = "<group>"; };
 		57102B891C4775B500A4FD53 /* FirstLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		57102B8D1C4775B600A4FD53 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		57102B8F1C4775B600A4FD53 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -131,6 +134,8 @@
 				571370641C730A9500781D84 /* LocalNotificationViewController.m */,
 				57C76FE81C745B35003715B4 /* MapViewController.h */,
 				57C76FE91C745B35003715B4 /* MapViewController.m */,
+				148581001E553C770055F4FD /* WordSortingViewController.h */,
+				148581011E553C770055F4FD /* WordSortingViewController.m */,
 				57B4AE031C9AA16F00DD192B /* Utils.h */,
 				57B4AE041C9AA17000DD192B /* Utils.m */,
 				57102B951C4775B700A4FD53 /* Main.storyboard */,
@@ -292,6 +297,7 @@
 				57102BC31C477CE600A4FD53 /* AFNetworkReachabilityManager.m in Sources */,
 				57102BB31C4775EE00A4FD53 /* MainViewController.m in Sources */,
 				57102BC51C477CE600A4FD53 /* AFURLRequestSerialization.m in Sources */,
+				148581021E553C770055F4FD /* WordSortingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
