@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		14101AA41E5974B900B8FED8 /* NSExceptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14101AA31E5974B900B8FED8 /* NSExceptionViewController.m */; };
+		14101AA81E597C2E00B8FED8 /* NSMutableArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 14101AA71E597C2E00B8FED8 /* NSMutableArray+Extension.m */; };
+		14101AAB1E59993200B8FED8 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 14101AAA1E59993200B8FED8 /* NSObject+Extension.m */; };
 		148581021E553C770055F4FD /* WordSortingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148581011E553C770055F4FD /* WordSortingViewController.m */; };
 		57102B8E1C4775B600A4FD53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57102B8D1C4775B600A4FD53 /* main.m */; };
 		57102B911C4775B600A4FD53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57102B901C4775B600A4FD53 /* AppDelegate.m */; };
@@ -40,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14101AA21E5974B900B8FED8 /* NSExceptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSExceptionViewController.h; sourceTree = "<group>"; };
+		14101AA31E5974B900B8FED8 /* NSExceptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSExceptionViewController.m; sourceTree = "<group>"; };
+		14101AA61E597C2E00B8FED8 /* NSMutableArray+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Extension.h"; sourceTree = "<group>"; };
+		14101AA71E597C2E00B8FED8 /* NSMutableArray+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Extension.m"; sourceTree = "<group>"; };
+		14101AA91E59993200B8FED8 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
+		14101AAA1E59993200B8FED8 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
 		148581001E553C770055F4FD /* WordSortingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordSortingViewController.h; sourceTree = "<group>"; };
 		148581011E553C770055F4FD /* WordSortingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordSortingViewController.m; sourceTree = "<group>"; };
 		57102B891C4775B500A4FD53 /* FirstLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +109,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14101AA51E597BB400B8FED8 /* NSException+runtime+category处理异常崩溃 */ = {
+			isa = PBXGroup;
+			children = (
+				14101AA21E5974B900B8FED8 /* NSExceptionViewController.h */,
+				14101AA31E5974B900B8FED8 /* NSExceptionViewController.m */,
+				14101AA61E597C2E00B8FED8 /* NSMutableArray+Extension.h */,
+				14101AA71E597C2E00B8FED8 /* NSMutableArray+Extension.m */,
+				14101AA91E59993200B8FED8 /* NSObject+Extension.h */,
+				14101AAA1E59993200B8FED8 /* NSObject+Extension.m */,
+			);
+			name = "NSException+runtime+category处理异常崩溃";
+			sourceTree = "<group>";
+		};
 		57102B801C4775B400A4FD53 = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				57102BB41C477CE600A4FD53 /* AFNetworking */,
+				14101AA51E597BB400B8FED8 /* NSException+runtime+category处理异常崩溃 */,
 				57102B8F1C4775B600A4FD53 /* AppDelegate.h */,
 				57102B901C4775B600A4FD53 /* AppDelegate.m */,
 				57102B921C4775B700A4FD53 /* ViewController.h */,
@@ -288,11 +311,14 @@
 				57102BC61C477CE600A4FD53 /* AFURLResponseSerialization.m in Sources */,
 				57102B941C4775B700A4FD53 /* ViewController.m in Sources */,
 				57B4AE051C9AA17000DD192B /* Utils.m in Sources */,
+				14101AA41E5974B900B8FED8 /* NSExceptionViewController.m in Sources */,
 				57C76FEA1C745B35003715B4 /* MapViewController.m in Sources */,
 				57102B911C4775B600A4FD53 /* AppDelegate.m in Sources */,
+				14101AA81E597C2E00B8FED8 /* NSMutableArray+Extension.m in Sources */,
 				57102BC21C477CE600A4FD53 /* AFHTTPSessionManager.m in Sources */,
 				57102BC71C477CE600A4FD53 /* AFURLSessionManager.m in Sources */,
 				571370651C730A9500781D84 /* LocalNotificationViewController.m in Sources */,
+				14101AAB1E59993200B8FED8 /* NSObject+Extension.m in Sources */,
 				57102B8E1C4775B600A4FD53 /* main.m in Sources */,
 				57102BC31C477CE600A4FD53 /* AFNetworkReachabilityManager.m in Sources */,
 				57102BB31C4775EE00A4FD53 /* MainViewController.m in Sources */,
