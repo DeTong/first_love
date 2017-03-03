@@ -10,6 +10,12 @@
 		14101AA41E5974B900B8FED8 /* NSExceptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14101AA31E5974B900B8FED8 /* NSExceptionViewController.m */; };
 		14101AA81E597C2E00B8FED8 /* NSMutableArray+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 14101AA71E597C2E00B8FED8 /* NSMutableArray+Extension.m */; };
 		14101AAB1E59993200B8FED8 /* NSObject+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 14101AAA1E59993200B8FED8 /* NSObject+Extension.m */; };
+		14101AAF1E5DC80400B8FED8 /* SQLiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14101AAE1E5DC80400B8FED8 /* SQLiteViewController.m */; };
+		14101AF91E6868BC00B8FED8 /* SSQLiteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14101AF81E6868BC00B8FED8 /* SSQLiteViewController.m */; };
+		14101AFD1E687AFA00B8FED8 /* KVO-ObserveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14101AFC1E687AFA00B8FED8 /* KVO-ObserveViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14101B001E687B1100B8FED8 /* KVO-BeenObserveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14101AFF1E687B1100B8FED8 /* KVO-BeenObserveViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14101B031E687F2400B8FED8 /* KVO_ManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14101B021E687F2400B8FED8 /* KVO_ManageViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		14101B061E69372400B8FED8 /* KVO_BeenObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 14101B051E69372400B8FED8 /* KVO_BeenObject.m */; };
 		148581021E553C770055F4FD /* WordSortingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148581011E553C770055F4FD /* WordSortingViewController.m */; };
 		57102B8E1C4775B600A4FD53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57102B8D1C4775B600A4FD53 /* main.m */; };
 		57102B911C4775B600A4FD53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57102B901C4775B600A4FD53 /* AppDelegate.m */; };
@@ -49,6 +55,18 @@
 		14101AA71E597C2E00B8FED8 /* NSMutableArray+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Extension.m"; sourceTree = "<group>"; };
 		14101AA91E59993200B8FED8 /* NSObject+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Extension.h"; sourceTree = "<group>"; };
 		14101AAA1E59993200B8FED8 /* NSObject+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Extension.m"; sourceTree = "<group>"; };
+		14101AAD1E5DC80400B8FED8 /* SQLiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteViewController.h; sourceTree = "<group>"; };
+		14101AAE1E5DC80400B8FED8 /* SQLiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteViewController.m; sourceTree = "<group>"; };
+		14101AF71E6868BC00B8FED8 /* SSQLiteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSQLiteViewController.h; sourceTree = "<group>"; };
+		14101AF81E6868BC00B8FED8 /* SSQLiteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSQLiteViewController.m; sourceTree = "<group>"; };
+		14101AFB1E687AFA00B8FED8 /* KVO-ObserveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KVO-ObserveViewController.h"; sourceTree = "<group>"; };
+		14101AFC1E687AFA00B8FED8 /* KVO-ObserveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KVO-ObserveViewController.m"; sourceTree = "<group>"; };
+		14101AFE1E687B1100B8FED8 /* KVO-BeenObserveViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KVO-BeenObserveViewController.h"; sourceTree = "<group>"; };
+		14101AFF1E687B1100B8FED8 /* KVO-BeenObserveViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KVO-BeenObserveViewController.m"; sourceTree = "<group>"; };
+		14101B011E687F2400B8FED8 /* KVO_ManageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVO_ManageViewController.h; sourceTree = "<group>"; };
+		14101B021E687F2400B8FED8 /* KVO_ManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVO_ManageViewController.m; sourceTree = "<group>"; };
+		14101B041E69372400B8FED8 /* KVO_BeenObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVO_BeenObject.h; sourceTree = "<group>"; };
+		14101B051E69372400B8FED8 /* KVO_BeenObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVO_BeenObject.m; sourceTree = "<group>"; };
 		148581001E553C770055F4FD /* WordSortingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordSortingViewController.h; sourceTree = "<group>"; };
 		148581011E553C770055F4FD /* WordSortingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordSortingViewController.m; sourceTree = "<group>"; };
 		57102B891C4775B500A4FD53 /* FirstLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +140,32 @@
 			name = "NSException+runtime+category处理异常崩溃";
 			sourceTree = "<group>";
 		};
+		14101AAC1E5DC7E000B8FED8 /* SQLite */ = {
+			isa = PBXGroup;
+			children = (
+				14101AAD1E5DC80400B8FED8 /* SQLiteViewController.h */,
+				14101AAE1E5DC80400B8FED8 /* SQLiteViewController.m */,
+				14101AF71E6868BC00B8FED8 /* SSQLiteViewController.h */,
+				14101AF81E6868BC00B8FED8 /* SSQLiteViewController.m */,
+			);
+			name = SQLite;
+			sourceTree = "<group>";
+		};
+		14101AFA1E687A9C00B8FED8 /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				14101B011E687F2400B8FED8 /* KVO_ManageViewController.h */,
+				14101B021E687F2400B8FED8 /* KVO_ManageViewController.m */,
+				14101AFB1E687AFA00B8FED8 /* KVO-ObserveViewController.h */,
+				14101AFC1E687AFA00B8FED8 /* KVO-ObserveViewController.m */,
+				14101AFE1E687B1100B8FED8 /* KVO-BeenObserveViewController.h */,
+				14101AFF1E687B1100B8FED8 /* KVO-BeenObserveViewController.m */,
+				14101B041E69372400B8FED8 /* KVO_BeenObject.h */,
+				14101B051E69372400B8FED8 /* KVO_BeenObject.m */,
+			);
+			name = KVO;
+			sourceTree = "<group>";
+		};
 		57102B801C4775B400A4FD53 = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +189,8 @@
 		57102B8B1C4775B500A4FD53 /* FirstLove */ = {
 			isa = PBXGroup;
 			children = (
+				14101AFA1E687A9C00B8FED8 /* KVO */,
+				14101AAC1E5DC7E000B8FED8 /* SQLite */,
 				57102BB41C477CE600A4FD53 /* AFNetworking */,
 				14101AA51E597BB400B8FED8 /* NSException+runtime+category处理异常崩溃 */,
 				57102B8F1C4775B600A4FD53 /* AppDelegate.h */,
@@ -256,6 +302,7 @@
 				TargetAttributes = {
 					57102B881C4775B500A4FD53 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 2T2UGQRP6L;
 					};
 					57102BA11C4775B700A4FD53 = {
 						CreatedOnToolsVersion = 7.2;
@@ -307,7 +354,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14101AF91E6868BC00B8FED8 /* SSQLiteViewController.m in Sources */,
+				14101B061E69372400B8FED8 /* KVO_BeenObject.m in Sources */,
 				57102BC41C477CE600A4FD53 /* AFSecurityPolicy.m in Sources */,
+				14101B001E687B1100B8FED8 /* KVO-BeenObserveViewController.m in Sources */,
 				57102BC61C477CE600A4FD53 /* AFURLResponseSerialization.m in Sources */,
 				57102B941C4775B700A4FD53 /* ViewController.m in Sources */,
 				57B4AE051C9AA17000DD192B /* Utils.m in Sources */,
@@ -315,8 +365,11 @@
 				57C76FEA1C745B35003715B4 /* MapViewController.m in Sources */,
 				57102B911C4775B600A4FD53 /* AppDelegate.m in Sources */,
 				14101AA81E597C2E00B8FED8 /* NSMutableArray+Extension.m in Sources */,
+				14101AAF1E5DC80400B8FED8 /* SQLiteViewController.m in Sources */,
 				57102BC21C477CE600A4FD53 /* AFHTTPSessionManager.m in Sources */,
+				14101B031E687F2400B8FED8 /* KVO_ManageViewController.m in Sources */,
 				57102BC71C477CE600A4FD53 /* AFURLSessionManager.m in Sources */,
+				14101AFD1E687AFA00B8FED8 /* KVO-ObserveViewController.m in Sources */,
 				571370651C730A9500781D84 /* LocalNotificationViewController.m in Sources */,
 				14101AAB1E59993200B8FED8 /* NSObject+Extension.m in Sources */,
 				57102B8E1C4775B600A4FD53 /* main.m in Sources */,
@@ -449,6 +502,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2T2UGQRP6L;
 				INFOPLIST_FILE = FirstLove/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -461,6 +515,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2T2UGQRP6L;
 				INFOPLIST_FILE = FirstLove/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
