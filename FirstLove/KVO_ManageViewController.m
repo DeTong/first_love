@@ -26,14 +26,15 @@ static int contextForKVO;   //  这种标识方法应该只适用于观察者为
     KVO_BeenObserveViewController *kvoBeen = [[KVO_BeenObserveViewController alloc] init];
     KVO_BeenObject *object = [[KVO_BeenObject alloc] init];
     
-    [object addObserver:kvoObs forKeyPath:@"beenObjectString" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:&contextForKVO];
+    [object addObserver:self forKeyPath:@"beenObjectString" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:&contextForKVO];
+    [object addObserver:kvoObs forKeyPath:@"beenObjectString" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
     [object addObserver:kvoObs forKeyPath:@"beenObjectAllString" options:NSKeyValueObservingOptionNew context:nil];
     
     NSLog(@"执行监听");
     //  延迟1秒钟后在主线程执行代码，但是并不会阻塞主线程
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [object updateKVO_TestBeenObjectString:@"beenObjectString"];
-        NSLog(@"调用改变方法");
+        NSLog(@"成功调用改变方法");
     });
 //    利用observationInfo函数，可检查出指定类的监察对象都有哪些。
 //    如果移除了某个没有声明的属性，是不是可以利用runtime的获取属性方法然后根据这个方法返回的值来进行一一比较。然后利用运行时的特性，生成相关的属性，或者实例变量？以防止
@@ -45,6 +46,15 @@ static int contextForKVO;   //  这种标识方法应该只适用于观察者为
 //    NSLog(@"移除监听");
 //    [kvoBeen removeObserver:kvoObs forKeyPath:@"kvoTestString"];
 
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+{
+//    NSLog(@"%@",change);
+    NSLog(@"%p",context);
+    if (context == &contextForKVO) {
+        NSLog(@"标识相同");
+    }
 }
 
 - (void)didReceiveMemoryWarning {
