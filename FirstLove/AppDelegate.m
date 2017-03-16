@@ -14,6 +14,8 @@
 #import "NSExceptionViewController.h"   //  利用runtime处理异常崩溃
 #import "SQLiteViewController.h"    //  基于系统的sql封装
 #import "KVO_ManageViewController.h"
+#import "UICollectionDemoViewController.h"  //  对于集合视图的研究和联系
+#import "AVPlayerViewController.h"    //  AVPlayer
 
 @interface AppDelegate ()
 
@@ -37,7 +39,9 @@
 //    self.window.rootViewController = [NSExceptionViewController new];
 //    self.window.rootViewController = [LocalNotificationViewController new];
 //    self.window.rootViewController = [SQLiteViewController new];
-    self.window.rootViewController = [KVO_ManageViewController new];
+//    self.window.rootViewController = [KVO_ManageViewController new];
+    self.window.rootViewController = [UICollectionDemoViewController new];
+//    self.window.rootViewController = [AVPlayerViewController new];
 
     [self.window makeKeyAndVisible];
 

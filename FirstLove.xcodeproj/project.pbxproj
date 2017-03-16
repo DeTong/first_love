@@ -16,6 +16,10 @@
 		14101B001E687B1100B8FED8 /* KVO-BeenObserveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14101AFF1E687B1100B8FED8 /* KVO-BeenObserveViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		14101B031E687F2400B8FED8 /* KVO_ManageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 14101B021E687F2400B8FED8 /* KVO_ManageViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		14101B061E69372400B8FED8 /* KVO_BeenObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 14101B051E69372400B8FED8 /* KVO_BeenObject.m */; };
+		1427B3611E71850A0056D94E /* UICollectionDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1427B3601E71850A0056D94E /* UICollectionDemoViewController.m */; };
+		1427B3641E7190E90056D94E /* DemoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1427B3631E7190E90056D94E /* DemoCollectionViewCell.m */; };
+		1427B3671E719F630056D94E /* DemoFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1427B3661E719F630056D94E /* DemoFlowLayout.m */; };
+		1427B37C1E72601A0056D94E /* AVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1427B37B1E72601A0056D94E /* AVPlayerViewController.m */; };
 		148581021E553C770055F4FD /* WordSortingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 148581011E553C770055F4FD /* WordSortingViewController.m */; };
 		57102B8E1C4775B600A4FD53 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 57102B8D1C4775B600A4FD53 /* main.m */; };
 		57102B911C4775B600A4FD53 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 57102B901C4775B600A4FD53 /* AppDelegate.m */; };
@@ -67,6 +71,14 @@
 		14101B021E687F2400B8FED8 /* KVO_ManageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVO_ManageViewController.m; sourceTree = "<group>"; };
 		14101B041E69372400B8FED8 /* KVO_BeenObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KVO_BeenObject.h; sourceTree = "<group>"; };
 		14101B051E69372400B8FED8 /* KVO_BeenObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KVO_BeenObject.m; sourceTree = "<group>"; };
+		1427B35F1E71850A0056D94E /* UICollectionDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICollectionDemoViewController.h; sourceTree = "<group>"; };
+		1427B3601E71850A0056D94E /* UICollectionDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICollectionDemoViewController.m; sourceTree = "<group>"; };
+		1427B3621E7190E90056D94E /* DemoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCollectionViewCell.h; sourceTree = "<group>"; };
+		1427B3631E7190E90056D94E /* DemoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCollectionViewCell.m; sourceTree = "<group>"; };
+		1427B3651E719F630056D94E /* DemoFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoFlowLayout.h; sourceTree = "<group>"; };
+		1427B3661E719F630056D94E /* DemoFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoFlowLayout.m; sourceTree = "<group>"; };
+		1427B37A1E72601A0056D94E /* AVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerViewController.h; sourceTree = "<group>"; };
+		1427B37B1E72601A0056D94E /* AVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerViewController.m; sourceTree = "<group>"; };
 		148581001E553C770055F4FD /* WordSortingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordSortingViewController.h; sourceTree = "<group>"; };
 		148581011E553C770055F4FD /* WordSortingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordSortingViewController.m; sourceTree = "<group>"; };
 		57102B891C4775B500A4FD53 /* FirstLove.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirstLove.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,6 +178,28 @@
 			name = KVO;
 			sourceTree = "<group>";
 		};
+		1427B35B1E7184420056D94E /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				1427B35F1E71850A0056D94E /* UICollectionDemoViewController.h */,
+				1427B3601E71850A0056D94E /* UICollectionDemoViewController.m */,
+				1427B3621E7190E90056D94E /* DemoCollectionViewCell.h */,
+				1427B3631E7190E90056D94E /* DemoCollectionViewCell.m */,
+				1427B3651E719F630056D94E /* DemoFlowLayout.h */,
+				1427B3661E719F630056D94E /* DemoFlowLayout.m */,
+			);
+			name = UICollectionView;
+			sourceTree = "<group>";
+		};
+		1427B3681E71B2CD0056D94E /* AVPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				1427B37A1E72601A0056D94E /* AVPlayerViewController.h */,
+				1427B37B1E72601A0056D94E /* AVPlayerViewController.m */,
+			);
+			name = AVPlayer;
+			sourceTree = "<group>";
+		};
 		57102B801C4775B400A4FD53 = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +223,8 @@
 		57102B8B1C4775B500A4FD53 /* FirstLove */ = {
 			isa = PBXGroup;
 			children = (
+				1427B3681E71B2CD0056D94E /* AVPlayer */,
+				1427B35B1E7184420056D94E /* UICollectionView */,
 				14101AFA1E687A9C00B8FED8 /* KVO */,
 				14101AAC1E5DC7E000B8FED8 /* SQLite */,
 				57102BB41C477CE600A4FD53 /* AFNetworking */,
@@ -357,12 +393,15 @@
 				14101AF91E6868BC00B8FED8 /* SSQLiteViewController.m in Sources */,
 				14101B061E69372400B8FED8 /* KVO_BeenObject.m in Sources */,
 				57102BC41C477CE600A4FD53 /* AFSecurityPolicy.m in Sources */,
+				1427B3641E7190E90056D94E /* DemoCollectionViewCell.m in Sources */,
 				14101B001E687B1100B8FED8 /* KVO-BeenObserveViewController.m in Sources */,
+				1427B37C1E72601A0056D94E /* AVPlayerViewController.m in Sources */,
 				57102BC61C477CE600A4FD53 /* AFURLResponseSerialization.m in Sources */,
 				57102B941C4775B700A4FD53 /* ViewController.m in Sources */,
 				57B4AE051C9AA17000DD192B /* Utils.m in Sources */,
 				14101AA41E5974B900B8FED8 /* NSExceptionViewController.m in Sources */,
 				57C76FEA1C745B35003715B4 /* MapViewController.m in Sources */,
+				1427B3671E719F630056D94E /* DemoFlowLayout.m in Sources */,
 				57102B911C4775B600A4FD53 /* AppDelegate.m in Sources */,
 				14101AA81E597C2E00B8FED8 /* NSMutableArray+Extension.m in Sources */,
 				14101AAF1E5DC80400B8FED8 /* SQLiteViewController.m in Sources */,
@@ -372,6 +411,7 @@
 				14101AFD1E687AFA00B8FED8 /* KVO-ObserveViewController.m in Sources */,
 				571370651C730A9500781D84 /* LocalNotificationViewController.m in Sources */,
 				14101AAB1E59993200B8FED8 /* NSObject+Extension.m in Sources */,
+				1427B3611E71850A0056D94E /* UICollectionDemoViewController.m in Sources */,
 				57102B8E1C4775B600A4FD53 /* main.m in Sources */,
 				57102BC31C477CE600A4FD53 /* AFNetworkReachabilityManager.m in Sources */,
 				57102BB31C4775EE00A4FD53 /* MainViewController.m in Sources */,
