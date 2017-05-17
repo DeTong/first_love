@@ -40,6 +40,16 @@
 		57C76FEA1C745B35003715B4 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 57C76FE91C745B35003715B4 /* MapViewController.m */; };
 		57C76FEC1C745ECC003715B4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57C76FEB1C745ECC003715B4 /* CoreLocation.framework */; };
 		57F635F41C61FC89006FF3EE /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 57F635F31C61FC89006FF3EE /* libz.tbd */; };
+		84A84B2C1ECC86480054F573 /* PDFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84A84B2B1ECC86480054F573 /* PDFViewController.m */; };
+		84A84B2E1ECC8D2A0054F573 /* ppp.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 84A84B2D1ECC8D2A0054F573 /* ppp.pdf */; };
+		84C1AB0A1E8E94D0008EEE59 /* WatermarkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1AB091E8E94D0008EEE59 /* WatermarkViewController.m */; };
+		84C1AB0C1E8E9584008EEE59 /* IMG_0062.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 84C1AB0B1E8E9584008EEE59 /* IMG_0062.JPG */; };
+		84C1AB1A1E8E9C5B008EEE59 /* UIImageView+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1AB0F1E8E9C5B008EEE59 /* UIImageView+Addition.m */; };
+		84C1AB1B1E8E9C5B008EEE59 /* UIImageView+BetterFace.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1AB111E8E9C5B008EEE59 /* UIImageView+BetterFace.m */; };
+		84C1AB1C1E8E9C5B008EEE59 /* UIImageView+FaceAwareFill.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1AB131E8E9C5B008EEE59 /* UIImageView+FaceAwareFill.m */; };
+		84C1AB1D1E8E9C5B008EEE59 /* UIImageView+GeometryConversion.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1AB151E8E9C5B008EEE59 /* UIImageView+GeometryConversion.m */; };
+		84C1AB1E1E8E9C5B008EEE59 /* UIImageView+Letters.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1AB171E8E9C5B008EEE59 /* UIImageView+Letters.m */; };
+		84C1AB1F1E8E9C5B008EEE59 /* UIImageView+Reflect.m in Sources */ = {isa = PBXBuildFile; fileRef = 84C1AB191E8E9C5B008EEE59 /* UIImageView+Reflect.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +127,24 @@
 		57C76FE91C745B35003715B4 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		57C76FEB1C745ECC003715B4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		57F635F31C61FC89006FF3EE /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		84A84B2A1ECC86480054F573 /* PDFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFViewController.h; sourceTree = "<group>"; };
+		84A84B2B1ECC86480054F573 /* PDFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFViewController.m; sourceTree = "<group>"; };
+		84A84B2D1ECC8D2A0054F573 /* ppp.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ppp.pdf; sourceTree = "<group>"; };
+		84C1AB081E8E94D0008EEE59 /* WatermarkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WatermarkViewController.h; sourceTree = "<group>"; };
+		84C1AB091E8E94D0008EEE59 /* WatermarkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WatermarkViewController.m; sourceTree = "<group>"; };
+		84C1AB0B1E8E9584008EEE59 /* IMG_0062.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_0062.JPG; sourceTree = "<group>"; };
+		84C1AB0E1E8E9C5B008EEE59 /* UIImageView+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Addition.h"; sourceTree = "<group>"; };
+		84C1AB0F1E8E9C5B008EEE59 /* UIImageView+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Addition.m"; sourceTree = "<group>"; };
+		84C1AB101E8E9C5B008EEE59 /* UIImageView+BetterFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+BetterFace.h"; sourceTree = "<group>"; };
+		84C1AB111E8E9C5B008EEE59 /* UIImageView+BetterFace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+BetterFace.m"; sourceTree = "<group>"; };
+		84C1AB121E8E9C5B008EEE59 /* UIImageView+FaceAwareFill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+FaceAwareFill.h"; sourceTree = "<group>"; };
+		84C1AB131E8E9C5B008EEE59 /* UIImageView+FaceAwareFill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+FaceAwareFill.m"; sourceTree = "<group>"; };
+		84C1AB141E8E9C5B008EEE59 /* UIImageView+GeometryConversion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+GeometryConversion.h"; sourceTree = "<group>"; };
+		84C1AB151E8E9C5B008EEE59 /* UIImageView+GeometryConversion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+GeometryConversion.m"; sourceTree = "<group>"; };
+		84C1AB161E8E9C5B008EEE59 /* UIImageView+Letters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Letters.h"; sourceTree = "<group>"; };
+		84C1AB171E8E9C5B008EEE59 /* UIImageView+Letters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Letters.m"; sourceTree = "<group>"; };
+		84C1AB181E8E9C5B008EEE59 /* UIImageView+Reflect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Reflect.h"; sourceTree = "<group>"; };
+		84C1AB191E8E9C5B008EEE59 /* UIImageView+Reflect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Reflect.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,7 +231,9 @@
 		57102B801C4775B400A4FD53 = {
 			isa = PBXGroup;
 			children = (
+				84C1AB0B1E8E9584008EEE59 /* IMG_0062.JPG */,
 				57F635F31C61FC89006FF3EE /* libz.tbd */,
+				84A84B2D1ECC8D2A0054F573 /* ppp.pdf */,
 				57C76FEB1C745ECC003715B4 /* CoreLocation.framework */,
 				57102B8B1C4775B500A4FD53 /* FirstLove */,
 				57102BA51C4775B700A4FD53 /* FirstLoveUITests */,
@@ -223,6 +253,8 @@
 		57102B8B1C4775B500A4FD53 /* FirstLove */ = {
 			isa = PBXGroup;
 			children = (
+				84A84B291ECC86310054F573 /* PDF */,
+				84C1AB041E8E9113008EEE59 /* 水印 */,
 				1427B3681E71B2CD0056D94E /* AVPlayer */,
 				1427B35B1E7184420056D94E /* UICollectionView */,
 				14101AFA1E687A9C00B8FED8 /* KVO */,
@@ -287,6 +319,44 @@
 				57102BC11C477CE600A4FD53 /* AFURLSessionManager.m */,
 			);
 			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		84A84B291ECC86310054F573 /* PDF */ = {
+			isa = PBXGroup;
+			children = (
+				84A84B2A1ECC86480054F573 /* PDFViewController.h */,
+				84A84B2B1ECC86480054F573 /* PDFViewController.m */,
+			);
+			name = PDF;
+			sourceTree = "<group>";
+		};
+		84C1AB041E8E9113008EEE59 /* 水印 */ = {
+			isa = PBXGroup;
+			children = (
+				84C1AB0D1E8E9C5B008EEE59 /* UIImageView */,
+				84C1AB081E8E94D0008EEE59 /* WatermarkViewController.h */,
+				84C1AB091E8E94D0008EEE59 /* WatermarkViewController.m */,
+			);
+			name = "水印";
+			sourceTree = "<group>";
+		};
+		84C1AB0D1E8E9C5B008EEE59 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				84C1AB0E1E8E9C5B008EEE59 /* UIImageView+Addition.h */,
+				84C1AB0F1E8E9C5B008EEE59 /* UIImageView+Addition.m */,
+				84C1AB101E8E9C5B008EEE59 /* UIImageView+BetterFace.h */,
+				84C1AB111E8E9C5B008EEE59 /* UIImageView+BetterFace.m */,
+				84C1AB121E8E9C5B008EEE59 /* UIImageView+FaceAwareFill.h */,
+				84C1AB131E8E9C5B008EEE59 /* UIImageView+FaceAwareFill.m */,
+				84C1AB141E8E9C5B008EEE59 /* UIImageView+GeometryConversion.h */,
+				84C1AB151E8E9C5B008EEE59 /* UIImageView+GeometryConversion.m */,
+				84C1AB161E8E9C5B008EEE59 /* UIImageView+Letters.h */,
+				84C1AB171E8E9C5B008EEE59 /* UIImageView+Letters.m */,
+				84C1AB181E8E9C5B008EEE59 /* UIImageView+Reflect.h */,
+				84C1AB191E8E9C5B008EEE59 /* UIImageView+Reflect.m */,
+			);
+			path = UIImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -373,6 +443,8 @@
 				57102B9C1C4775B700A4FD53 /* LaunchScreen.storyboard in Resources */,
 				57102B991C4775B700A4FD53 /* Assets.xcassets in Resources */,
 				57102B971C4775B700A4FD53 /* Main.storyboard in Resources */,
+				84A84B2E1ECC8D2A0054F573 /* ppp.pdf in Resources */,
+				84C1AB0C1E8E9584008EEE59 /* IMG_0062.JPG in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +464,8 @@
 			files = (
 				14101AF91E6868BC00B8FED8 /* SSQLiteViewController.m in Sources */,
 				14101B061E69372400B8FED8 /* KVO_BeenObject.m in Sources */,
+				84C1AB0A1E8E94D0008EEE59 /* WatermarkViewController.m in Sources */,
+				84C1AB1C1E8E9C5B008EEE59 /* UIImageView+FaceAwareFill.m in Sources */,
 				57102BC41C477CE600A4FD53 /* AFSecurityPolicy.m in Sources */,
 				1427B3641E7190E90056D94E /* DemoCollectionViewCell.m in Sources */,
 				14101B001E687B1100B8FED8 /* KVO-BeenObserveViewController.m in Sources */,
@@ -402,19 +476,25 @@
 				14101AA41E5974B900B8FED8 /* NSExceptionViewController.m in Sources */,
 				57C76FEA1C745B35003715B4 /* MapViewController.m in Sources */,
 				1427B3671E719F630056D94E /* DemoFlowLayout.m in Sources */,
+				84C1AB1B1E8E9C5B008EEE59 /* UIImageView+BetterFace.m in Sources */,
 				57102B911C4775B600A4FD53 /* AppDelegate.m in Sources */,
 				14101AA81E597C2E00B8FED8 /* NSMutableArray+Extension.m in Sources */,
 				14101AAF1E5DC80400B8FED8 /* SQLiteViewController.m in Sources */,
 				57102BC21C477CE600A4FD53 /* AFHTTPSessionManager.m in Sources */,
 				14101B031E687F2400B8FED8 /* KVO_ManageViewController.m in Sources */,
 				57102BC71C477CE600A4FD53 /* AFURLSessionManager.m in Sources */,
+				84C1AB1A1E8E9C5B008EEE59 /* UIImageView+Addition.m in Sources */,
 				14101AFD1E687AFA00B8FED8 /* KVO-ObserveViewController.m in Sources */,
 				571370651C730A9500781D84 /* LocalNotificationViewController.m in Sources */,
+				84C1AB1F1E8E9C5B008EEE59 /* UIImageView+Reflect.m in Sources */,
 				14101AAB1E59993200B8FED8 /* NSObject+Extension.m in Sources */,
+				84A84B2C1ECC86480054F573 /* PDFViewController.m in Sources */,
 				1427B3611E71850A0056D94E /* UICollectionDemoViewController.m in Sources */,
 				57102B8E1C4775B600A4FD53 /* main.m in Sources */,
 				57102BC31C477CE600A4FD53 /* AFNetworkReachabilityManager.m in Sources */,
 				57102BB31C4775EE00A4FD53 /* MainViewController.m in Sources */,
+				84C1AB1E1E8E9C5B008EEE59 /* UIImageView+Letters.m in Sources */,
+				84C1AB1D1E8E9C5B008EEE59 /* UIImageView+GeometryConversion.m in Sources */,
 				57102BC51C477CE600A4FD53 /* AFURLRequestSerialization.m in Sources */,
 				148581021E553C770055F4FD /* WordSortingViewController.m in Sources */,
 			);

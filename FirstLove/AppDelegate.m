@@ -16,6 +16,8 @@
 #import "KVO_ManageViewController.h"
 #import "UICollectionDemoViewController.h"  //  对于集合视图的研究和联系
 #import "AVPlayerViewController.h"    //  AVPlayer
+#import "WatermarkViewController.h"
+#import "PDFViewController.h"
 
 @interface AppDelegate ()
 
@@ -40,8 +42,10 @@
 //    self.window.rootViewController = [LocalNotificationViewController new];
 //    self.window.rootViewController = [SQLiteViewController new];
 //    self.window.rootViewController = [KVO_ManageViewController new];
-    self.window.rootViewController = [UICollectionDemoViewController new];
+//    self.window.rootViewController = [UICollectionDemoViewController new];
 //    self.window.rootViewController = [AVPlayerViewController new];
+//    self.window.rootViewController = [WatermarkViewController new];
+    self.window.rootViewController = [PDFViewController new];
 
     [self.window makeKeyAndVisible];
 
